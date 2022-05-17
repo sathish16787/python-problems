@@ -4,12 +4,11 @@ if __name__ == '__main__':
     
 m=list(arr)
 m.sort()
-l=m
 maximum=max(m)
 
 old_i=0
-for i in range(len(l)):
-    if maximum > l[i] and l[i] != maximum:
-        old_i=l[i]
+for i in range(len(m)):
+    if maximum > m[i] and m[i] != maximum:
+        old_i=m[i]
         
 print(old_i)
