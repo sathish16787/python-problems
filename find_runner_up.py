@@ -2,13 +2,14 @@ if __name__ == '__main__':
     n = int(input())
     arr = map(int, input().split())
     
-
-list_value=list(arr)
-maximum_from_list_value=max(list_value)
+m=list(arr)
+m.sort()
+l=m
+maximum=max(m)
 
 old_i=0
-for i in range(len(list_value)):
-    if list_value[i] < maximum_from_list_value and list_value[i] != maximum_from_list_value:
-        old_i=list_value[i]
+for i in range(len(l)):
+    if maximum > l[i] and l[i] != maximum:
+        old_i=l[i]
         
 print(old_i)
